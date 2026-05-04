@@ -1,5 +1,7 @@
 # Omikuji
 
+[![Tests](https://github.com/diwao/omikuji/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/diwao/omikuji/actions/workflows/test.yml)
+
 ## Description
 
 Get a random value from an array.
