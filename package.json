@@ -1,7 +1,7 @@
 {
   "name": "omikuji",
   "version": "1.1.0",
-  "description": "Get random value from Array.",
+  "description": "Get a random value from an array.",
   "license": "MIT",
   "main": "./dist/omikuji.js",
   "module": "./dist/omikuji.mjs",
