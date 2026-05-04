@@ -40,6 +40,9 @@ class Omikuji {
         return [...this.items];
     }
     assertUsableItems(items) {
+        if (!Array.isArray(items)) {
+            throw new TypeError('Omikuji items must be an array.');
+        }
         if (items.length === 0) {
             throw new RangeError('Omikuji must contain at least one item.');
         }
