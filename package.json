@@ -1,0 +1,40 @@
+{
+  "name": "omikuji",
+  "version": "1.1.0",
+  "description": "Get random value from Array.",
+  "license": "MIT",
+  "main": "./dist/omikuji.js",
+  "module": "./dist/omikuji.mjs",
+  "types": "./dist/omikuji.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/omikuji.d.ts",
+      "import": "./dist/omikuji.mjs",
+      "require": "./dist/omikuji.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.rollup.json && rollup -c && tsc -p tsconfig.build.json && node ./scripts/prepare-types.mjs && node ./scripts/check-dist.mjs",
+    "test": "vitest",
+    "test:run": "vitest run",
+    "prepublishOnly": "npm run test:run && npm run build"
+  },
+  "keywords": [
+    "omikuji",
+    "random",
+    "fortune"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/diwao/omikuji.git"
+  },
+  "devDependencies": {
+    "rollup": "^4.40.0",
+    "typescript": "^5.8.3",
+    "vitest": "^3.1.2"
+  }
+}
