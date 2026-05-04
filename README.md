@@ -1,5 +1,6 @@
 # Omikuji
 
+[![npm version](https://img.shields.io/npm/v/omikuji.svg)](https://www.npmjs.com/package/omikuji)
 [![Tests](https://github.com/diwao/omikuji/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/diwao/omikuji/actions/workflows/test.yml)
 
 ## Description
