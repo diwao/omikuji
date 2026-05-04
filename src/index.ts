@@ -53,6 +53,10 @@ export default class Omikuji<T = string> {
   }
 
   private assertUsableItems(items: readonly T[]): void {
+    if (!Array.isArray(items)) {
+      throw new TypeError('Omikuji items must be an array.');
+    }
+
     if (items.length === 0) {
       throw new RangeError('Omikuji must contain at least one item.');
     }
