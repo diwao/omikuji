@@ -91,6 +91,8 @@ Returns a copy of the current items.
 
 ## Errors
 
+Passing a non-array value as `items` to the constructor or `setItems()` throws a `TypeError`.
+
 Omikuji needs at least one item. Passing an empty array to the constructor or `setItems()` throws a `RangeError`.
 
 Removing the last remaining item also throws a `RangeError`.
