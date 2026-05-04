@@ -32,6 +32,9 @@
     "type": "git",
     "url": "git+ssh://git@github.com/diwao/omikuji.git"
   },
+  "engines": {
+    "node": ">=18"
+  },
   "devDependencies": {
     "rollup": "^4.40.0",
     "typescript": "^5.8.3",
