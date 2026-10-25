@@ -9,6 +9,15 @@ Get a random value from an array.
 
 Omikuji works with both CommonJS and ES Modules, and includes default fortune items so it can be used without initialization.
 
+## Randomness and security
+
+Omikuji uses `Math.random()` to select items. It is intended for casual uses
+such as fortune telling and is not cryptographically secure. Do not use it
+to generate passwords, authentication tokens, or security-sensitive IDs,
+or for drawings that require resistance to prediction or manipulation.
+For security-sensitive selection, use a cryptographically secure random
+source and a design appropriate to your application's requirements.
+
 ## Installation
 
 ```sh
