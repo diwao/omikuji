@@ -9,11 +9,42 @@ Get a random value from an array.
 
 Omikuji works with both CommonJS and ES Modules, and includes default fortune items so it can be used without initialization.
 
+## Randomness and security
+
+Omikuji uses `Math.random()` to select items. It is intended for casual uses
+such as fortune telling and is not cryptographically secure. Do not use it
+to generate passwords, authentication tokens, or security-sensitive IDs,
+or for drawings that require resistance to prediction or manipulation.
+For security-sensitive selection, use a cryptographically secure random
+source and a design appropriate to your application's requirements.
+
 ## Installation
 
 ```sh
 npm install omikuji
 ```
+
+## Development
+
+Use the Node.js version in `.nvmrc` for local development and npm releases:
+
+```sh
+nvm install
+nvm use
+npm ci
+npm run build
+npm run test:run
+```
+
+CI tests the latest available Node.js 22.x and 24.x releases, with minimum
+versions of 22.23.4 and 24.22.1 respectively. These minimum versions include
+the [October 2026 Node.js security fixes](https://nodejs.org/en/blog/vulnerability/october-2026-security-releases).
+Keep `.nvmrc` and the CI minimum versions up to date with security releases.
+
+The package's `engines` field remains `>=18` for installation compatibility;
+it does not indicate ongoing testing or security support for every allowed
+version. Node.js 18 and 20 are end-of-life. Use a supported Node.js release
+with current security patches in production.
 
 ## Usage
 

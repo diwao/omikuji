@@ -1,6 +1,6 @@
 {
   "name": "omikuji",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Get a random value from an array.",
   "license": "MIT",
   "main": "./dist/omikuji.js",
@@ -38,6 +38,6 @@
   "devDependencies": {
     "rollup": "^4.40.0",
     "typescript": "^5.8.3",
-    "vitest": "^3.1.2"
+    "vitest": "^4.1.12"
   }
 }
